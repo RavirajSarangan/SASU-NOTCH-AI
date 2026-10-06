@@ -1,0 +1,10 @@
+.build/
+build/
+.swiftpm/
+*.xcodeproj
+.DS_Store
+__pycache__/
+.vscode/
+
+# The test suite stays private (not published).
+Tests/

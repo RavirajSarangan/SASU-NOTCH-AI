@@ -1,0 +1,12 @@
+{
+  "name": "nova-companion",
+  "displayName": "Nova Companion",
+  "description": "Shows your VS Code activity (tasks, debugging, errors) in Nova, the notch companion.",
+  "version": "0.1.0",
+  "publisher": "nova",
+  "license": "MIT",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js"
+}

@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova · Your AI companion in the notch</title>
+  <meta name="description" content="Nova lives in your MacBook notch. It watches your coding agents, shows every change before you allow it, guards your Mac, talks with you, and dances to your music.">
+  <meta name="theme-color" content="#0A0E2A">
+  <link rel="icon" href="assets/nova-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-nav">
+    <a class="brand" href="#top" aria-label="Nova home">
+      <span class="brand-head" data-nova-head aria-hidden="true"></span>
+      <span>Nova</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#tour">Inside the notch</a>
+      <a href="#meet">Meet Nova</a>
+      <a href="#voice">Hey Nova</a>
+      <a href="#jarvis">Ask Nova</a>
+      <a href="#guard">Security</a>
+      <a href="#faq">FAQ</a>
+      <a href="compare.html">Compare</a>
+    </nav>
+    <a class="gh-star" href="https://github.com/RavirajSarangan/SASU-NOTCH-AI" aria-label="Star SASU Notch AI on GitHub">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      <span>Star</span>
+      <span class="gh-count" data-stars hidden></span>
+    </a>
+    <button class="theme-toggle" type="button" aria-label="Switch light or dark theme">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- Hero: a real MacBook screen. The notch opens into Nova's real panels. -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <h1>Your coding agents,<br>right under the notch.</h1>
+        <p class="lede">Nova lives in your MacBook notch. It shows what Claude Code, Codex, Cursor and Gemini are doing, lets you see every change before you allow it, guards your Mac, and talks with you.</p>
+        <div class="cta">
+          <a class="btn-primary" href="#download">Get Nova, free and open source</a>
+          <a class="btn-secondary" href="#tour">Take the tour</a>
+        </div>
+      </div>
+
+      <figure class="mac" aria-label="Nova on a MacBook: real recordings of the app">
+        <div class="mac-screen">
+          <video class="screen-video" data-hero-video muted playsinline preload="auto" autoplay poster="assets/video/hero.webp" aria-label="Nova in the notch: a Claude Code session working, then the Home panel opening"><source src="assets/video/hero.webm" type="video/webm"><source src="assets/video/hero.mp4" type="video/mp4"></video>
+        </div>
+        <div class="mac-base" aria-hidden="true"></div>
+        <div class="hero-tabs" role="tablist" aria-label="Show a recording">
+          <button role="tab" type="button" data-clip="hero" aria-selected="true">Home</button>
+          <button role="tab" type="button" data-clip="approval" aria-selected="false">Approve a change</button>
+          <button role="tab" type="button" data-clip="voice" aria-selected="false">Hey Nova</button>
+          <button role="tab" type="button" data-clip="guard" aria-selected="false">Nova Guard</button>
+          <button role="tab" type="button" data-clip="dance" aria-selected="false">Dance</button>
+        </div>
+        <figcaption class="rec-note">Real recordings of Nova running on a MacBook, with demo data. Nothing is mocked up.</figcaption>
+      </figure>
+
+      <p class="works-with">
+        Works with
+        <img src="assets/brands/claude.svg" alt="Claude Code" width="20" height="20">
+        <img src="assets/brands/openai.svg" alt="Codex" width="20" height="20">
+        <img src="assets/brands/cursor.svg" alt="Cursor" width="20" height="20">
+        <img src="assets/brands/googlegemini.svg" alt="Gemini CLI" width="20" height="20">
+        <img src="assets/brands/visualstudiocode.svg" alt="VS Code" width="20" height="20">
+      </p>
+    </section>
+
+    <!-- Tour: scroll through real screens; the frame on the right follows. -->
+    <section class="tour" id="tour">
+      <header class="section-head">
+        <h2>Everything happens in the notch</h2>
+        <p>Real recordings and screens from Nova, not mock-ups. Scroll, and the Mac follows along.</p>
+      </header>
+      <div class="scrolly">
+        <div class="steps">
+          <article class="step" data-shot="home" data-clip="hero">
+            <h3>Every session, one glance</h3>
+            <p>Two Claude Code windows, Codex, Cursor? Each live session gets its own chip, labelled by project. The one that needs you comes first; the rest wait under “+N”.</p>
+            <img class="step-shot" src="assets/screens/home.webp" alt="" loading="lazy" width="1280" height="721">
+          </article>
+          <article class="step" data-shot="approval-diff" data-clip="approval">
+            <h3>See the change before you allow it</h3>
+            <p>When an agent wants to edit a file, Nova shows the exact diff in red and green, with the line counts. Secrets in it are hidden with dots.</p>
+            <img class="step-shot" src="assets/screens/approval-diff.webp" alt="" loading="lazy" width="1280" height="569">
+          </article>
+          <article class="step" data-shot="approval-risk">
+            <h3>Two clicks for anything dangerous</h3>
+            <p>Deletes, force-pushes and scripts from the internet are marked high risk and need a second click. Reverse shells and <code>curl | sh</code> are always denied.</p>
+            <img class="step-shot" src="assets/screens/approval-risk.webp" alt="" loading="lazy" width="1280" height="469">
+          </article>
+          <article class="step" data-shot="question">
+            <h3>Answer your agent's questions</h3>
+            <p>When Claude asks you to choose, the options appear in the notch. Click one and Claude carries on. Or reply in the terminal.</p>
+            <img class="step-shot" src="assets/screens/question.webp" alt="" loading="lazy" width="1280" height="477">
+          </article>
+          <article class="step" data-shot="session">
+            <h3>Follow a run, step by step</h3>
+            <p>Open a session to see each tool it used and what it's doing now, with the mood scene behind Nova: falling code while it codes.</p>
+            <img class="step-shot" src="assets/screens/session.webp" alt="" loading="lazy" width="1280" height="716">
+          </article>
+          <article class="step" data-shot="compact" data-clip="hero">
+            <h3>Quiet while you work</h3>
+            <p>Most of the time Nova is a thin strip under the notch: who's working, on what, and how many sessions are live.</p>
+            <img class="step-shot" src="assets/screens/compact.webp" alt="" loading="lazy" width="916" height="168">
+          </article>
+        </div>
+        <div class="sticky">
+          <div class="mac mini" aria-hidden="true">
+            <div class="mac-screen">
+              <canvas class="wall"></canvas>
+              <div class="menubar"><span class="mb-left"><b></b> Finder</span><span class="mb-right" data-clock>9:41</span></div>
+              <video class="screen-video" data-tour-video loop muted playsinline preload="none" poster="assets/video/hero.webp" aria-hidden="true"><source src="assets/video/hero.webm" type="video/webm"><source src="assets/video/hero.mp4" type="video/mp4"></video>
+              <div class="notch-mask" data-tour-mask>
+                <img class="shot" data-tour-shot src="assets/screens/home.webp" alt="" width="1280" height="721">
+              </div>
+            </div>
+            <div class="mac-base"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Nova 2: the character, live. -->
+    <section class="meet" id="meet">
+      <header class="section-head">
+        <h2>Meet Nova</h2>
+        <p>Nova is drawn in code, joint by joint, so it can really move. It breathes, looks at your cursor, fidgets when it's bored, and reacts to everything your agents do. Rub its head.</p>
+      </header>
+      <div class="meet-grid">
+        <div class="stage" data-meet-stage>
+          <canvas class="wall" aria-hidden="true"></canvas>
+          <div class="stage-nova" data-meet-nova role="img" aria-label="Nova, live"></div>
+          <p class="stage-hint">Move your mouse · rub its head · click it</p>
+        </div>
+        <div class="meet-controls">
+          <h3>Moods</h3>
+          <div class="chips" data-moods></div>
+          <h3>Skins</h3>
+          <div class="chips" data-skins></div>
+          <h3>Try</h3>
+          <div class="chips">
+            <button class="chip" type="button" data-act="dance" aria-pressed="false">♪ Dance with sound</button>
+            <button class="chip" type="button" data-act="cheer">Cheer</button>
+            <button class="chip" type="button" data-act="aha">“Aha!”</button>
+            <button class="chip" type="button" data-act="knock">Knock</button>
+            <button class="chip" type="button" data-act="stretch">Stretch</button>
+          </div>
+          <p class="fine">The beat is made live in your browser. In the app, Nova finds the real beat of your Spotify or Music song, on your Mac.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hey Nova: voice -->
+    <section class="feature voice" id="voice">
+      <div class="copy">
+        <h2>Just say “Hey Nova”</h2>
+        <p>Hold <kbd>⌥</kbd> <kbd>Space</kbd>, or say “Hey Nova”, and ask. Nova answers out loud, in English or Tamil.</p>
+        <div class="phrases" data-phrases>
+          <button type="button" data-say="status">“What are my agents doing?”</button>
+          <button type="button" data-say="deny">“Deny that.”</button>
+          <button type="button" data-say="scan">“Am I safe?”</button>
+          <button type="button" data-say="music">“Paattu podu.”</button>
+          <button type="button" data-say="dance">“Nova, dance!”</button>
+          <button type="button" data-say="joke">“Tell me a joke.”</button>
+          <button type="button" data-say="allow">“Allow it.”</button>
+          <button type="button" data-say="search">“Google swift concurrency.”</button>
+          <button type="button" data-say="whatsapp">“Send Amma ‘I'll be late’ on WhatsApp.”</button>
+          <button type="button" data-say="check">“Check my system.”</button>
+        </div>
+        <p class="voice-reply" data-voice-reply aria-live="polite">Pick a phrase to hear what Nova says.</p>
+        <ul class="points">
+          <li>Speech is recognised on your Mac only. Audio is never stored or sent.</li>
+          <li>Voice can deny an agent's request, but never approve one.</li>
+          <li>Anything else goes to the AI provider you chose, and Nova reads the answer.</li>
+        </ul>
+      </div>
+      <figure class="voice-shots">
+        <div class="mac-screen strip"><video class="screen-video" loop data-autoplay muted playsinline preload="none" poster="assets/video/voice.webp" aria-label="Nova listening to “Hey Nova, google swift concurrency”, thinking, then answering"><source src="assets/video/voice.webm" type="video/webm"><source src="assets/video/voice.mp4" type="video/mp4"></video></div>
+        <figcaption class="rec-note">Recorded from the app.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Guard -->
+    <section class="feature flip" id="guard">
+      <div class="copy">
+        <h2>A guard that knows your Mac</h2>
+        <p>Nova Guard learns what's normal on your Mac and tells you the moment something changes: a new admin account, a remote login, an unknown startup item, another app using your microphone.</p>
+        <ul class="points">
+          <li>Safe fixes happen on their own and can be undone: risky startup items go to quarantine, reverse shells are stopped.</li>
+          <li>Fixes that need admin rights wait for your click and your password, and show the exact command first.</li>
+          <li>It's honest about its limits: no app can promise complete protection, so Guard watches the ways people most often get in.</li>
+        </ul>
+      </div>
+      <figure class="guard-video">
+        <div class="mac-screen"><video class="screen-video" loop data-autoplay muted playsinline preload="none" poster="assets/video/guard.webp" aria-label="Nova Guard: security score 84, a remote-login alert and checks with one-click fixes"><source src="assets/video/guard.webm" type="video/webm"><source src="assets/video/guard.mp4" type="video/mp4"></video></div>
+        <figcaption class="rec-note">Recorded from the app, with demo alerts.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Security, in detail -->
+    <section class="security" id="security">
+      <header class="section-head">
+        <h2>What Nova Guard watches</h2>
+        <p>Checks run on your Mac every few minutes. Alerts name the app or account involved, and every automatic fix can be undone.</p>
+      </header>
+      <div class="sec-grid">
+        <article>
+          <h3>Who gets in</h3>
+          <ul>
+            <li>Remote Login (SSH) and Screen Sharing sessions, with where they come from</li>
+            <li>Repeated failed login attempts</li>
+            <li>New user or admin accounts, and admin commands (sudo)</li>
+            <li>New SSH keys that can log in to your Mac</li>
+          </ul>
+        </article>
+        <article>
+          <h3>What starts by itself</h3>
+          <ul>
+            <li>New startup items; risky ones are moved to quarantine (undoable)</li>
+            <li>New configuration profiles and scheduled jobs (cron)</li>
+            <li>New admin rules in <code>/etc/sudoers.d</code></li>
+            <li>Changes to your shell startup files</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Your Mac's defences</h3>
+          <ul>
+            <li>FileVault disk encryption, Firewall and stealth mode</li>
+            <li>Gatekeeper and System Integrity Protection</li>
+            <li>Automatic security updates and the screen-lock password</li>
+            <li>A score out of 100, with one-click fixes</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Camera, microphone and network</h3>
+          <ul>
+            <li>Which app turned on the camera or microphone, by name</li>
+            <li>New ports open to the network, and unverified apps installed</li>
+            <li>macOS's own speech services are recognised, so there's no false alarm</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Your coding agents</h3>
+          <ul>
+            <li>Reverse shells and <code>curl | sh</code> are always denied; running ones are stopped</li>
+            <li>Deletes, force-pushes and internet scripts need two clicks</li>
+            <li>Diffs before every edit, with secrets hidden</li>
+            <li>Voice can deny, but never approve</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Ask any time</h3>
+          <ul>
+            <li>“Hey Nova, check my system”: threats plus CPU, memory, disk and battery health in one answer</li>
+            <li>Admin fixes show the exact command and wait for your password</li>
+            <li>No app can promise complete protection. Guard covers the ways people most often get in.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Nova does things for you -->
+    <section class="jarvis" id="jarvis">
+      <header class="section-head">
+        <h2>Ask, and Nova does it</h2>
+        <p>Nova controls your Mac by voice, and it always asks before anything that can't be undone.</p>
+      </header>
+      <div class="jarvis-grid">
+        <article><h3>Apps and the web</h3><p>“Open Safari.” “Hey Spotify.” “Google swift concurrency.” “New tab.” “Close Slack.” “Timer 10 minutes.” “Take a screenshot.”</p></article>
+        <article><h3>WhatsApp by voice</h3><p>“Send Amma ‘I'll be late’ on WhatsApp.” Nova finds the chat, reads the message back, and sends it only when you say “send”. Or “…at 10 pm” to schedule it.</p></article>
+        <article><h3>Check my system</h3><p>Threats, risky settings, a hungry app, low disk, battery health, who's using the microphone. One sentence back, and the details in Nova Guard.</p></article>
+        <article><h3>Several steps at once</h3><p>“Get my work day ready.” Nova shows its plan, does the safe steps by itself and waits for your “go” before sending, typing or closing anything.</p></article>
+        <article><h3>Clicks you can trust</h3><p>“Click Continue” presses the button. Buttons that send, delete, buy or allow need one click from you. Voice never approves an agent.</p></article>
+        <article><h3>Your day, by voice</h3><p>“What's next?” “Remind me at 5 to call Amma.” A nudge five minutes before each meeting, with a Join button.</p></article>
+        <article><h3>Routines and Shortcuts</h3><p>“Start my work day” opens your apps, reads today's calendar and starts the music. Any Apple Shortcut runs by name.</p></article>
+        <article><h3>Know your limits</h3><p>Claude Code and Codex usage from your own logs: this 5-hour window, the week, and when you'll hit the limit at this pace.</p></article>
+        <article><h3>Free AI that doesn't give up</h3><p>Use free Groq, OpenRouter or Gemini keys, or a model on your Mac. If one is busy, Nova quietly asks the next.</p></article>
+      </div>
+    </section>
+
+    <!-- Your day -->
+    <section class="day" id="day">
+      <header class="section-head">
+        <h2>It looks after the rest of your day too</h2>
+      </header>
+      <div class="day-layout">
+        <img class="day-shot" src="assets/screens/brief.webp" alt="Nova's morning brief: mail that needs you, LinkedIn and YouTube" loading="lazy" width="1280" height="722">
+        <div class="day-grid">
+          <article><h3>A morning brief</h3><p>Gmail, YouTube and LinkedIn summarised into what actually needs you today.</p></article>
+          <article><h3>WhatsApp, in your voice</h3><p>Good-morning messages to the people you pick and reply drafts in your style. You review them, and nothing goes out while you're offline.</p></article>
+          <article><h3>Music that moves Nova</h3><p>Spotify and Music in the notch. Turn on “Dance to music” and Nova dances on the beat.</p></article>
+          <article><h3>Ask anything</h3><p>Chat with Claude, OpenAI, Gemini, or a local model through Ollama or LM Studio. Keys stay in the Keychain.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works: a real sequence -->
+    <section class="how" id="how">
+      <h2>How it works</h2>
+      <ol class="flow">
+        <li><strong>Your agent runs a hook.</strong> A tiny helper is added to Claude Code, Codex, Cursor or Gemini. It sends each step to Nova.</li>
+        <li><strong>Over a private local socket.</strong> Only your user account can connect. Nothing goes to a server.</li>
+        <li><strong>Nova shows it in the notch.</strong> Your answers go back the same way, so the agent carries on instantly.</li>
+      </ol>
+    </section>
+
+    <!-- Privacy -->
+    <section class="privacy" id="privacy">
+      <h2>Private by default</h2>
+      <div class="privacy-grid">
+        <p><strong>Stays on your Mac:</strong> agent activity, security checks, your voice, the beat of your music, and your settings.</p>
+        <p><strong>Leaves only when you ask:</strong> chat questions and drafts go to the AI provider you chose, with your own key.</p>
+        <p><strong>Never:</strong> analytics, tracking or telemetry. Keys live in the Keychain, not in files.</p>
+      </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="compare" id="compare">
+      <h2>What makes Nova different</h2>
+      <div class="table-wrap">
+        <table>
+          <caption class="sr-only">Nova compared with a typical agent notch app</caption>
+          <thead><tr><th scope="col">Feature</th><th scope="col">Typical notch app</th><th scope="col">Nova</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Live agent sessions in the notch</th><td>Yes</td><td>Yes, many at once</td></tr>
+            <tr><th scope="row">See the diff before you allow an edit</th><td>Rarely</td><td>Yes</td></tr>
+            <tr><th scope="row">Answer the agent's questions in the notch</th><td>Sometimes</td><td>Yes</td></tr>
+            <tr><th scope="row">Voice assistant, on-device</th><td>No</td><td>Yes, English and Tamil</td></tr>
+            <tr><th scope="row">A character drawn live, with 18 moods</th><td>Sometimes, as pictures</td><td>Yes, and it dances</td></tr>
+            <tr><th scope="row">Mac security monitoring with undoable fixes</th><td>No</td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compare-more"><a href="compare.html">See the full comparison with other apps</a></p>
+    </section>
+
+    <!-- Download -->
+    <section class="download" id="download">
+      <div class="download-nova" data-download-nova aria-hidden="true"></div>
+      <h2>Bring Nova home</h2>
+      <p>macOS 15 or later. Works on MacBooks with a notch and in the menu bar on other Macs.</p>
+      <a class="btn-primary" href="https://github.com/RavirajSarangan/SASU-NOTCH-AI">Get the source on GitHub</a>
+      <p class="fine">Nova is open source (MIT). Build it with <code>scripts/build_app.sh</code>. It isn't notarized yet, so the first time, right-click the app and choose Open.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <h2>Questions</h2>
+      <details>
+        <summary>Does Nova slow down my Mac?</summary>
+        <p>No. Nova draws its animations outside the normal layout work, skips frames when nothing visibly changes, and pauses when the notch is hidden or your screen is locked.</p>
+      </details>
+      <details>
+        <summary>Can Nova approve commands on its own?</summary>
+        <p>Never. Nova can deny dangerous commands automatically, but allowing always needs your click, and high-risk commands need two. Voice can deny, never approve.</p>
+      </details>
+      <details>
+        <summary>Is Nova always listening?</summary>
+        <p>Only if you turn on “Hey Nova”. Then it listens on your Mac only, shows that it's listening, and pauses while your screen is locked or another app is using the microphone. Otherwise it listens only while you hold <kbd>⌥</kbd> <kbd>Space</kbd>.</p>
+      </details>
+      <details>
+        <summary>Does it understand Tamil?</summary>
+        <p>Yes, for the built-in commands, including Tanglish like “paattu podu” or “enna nadakkuthu”. Tamil speech recognition depends on your macOS version supporting it offline; Settings tells you if it does.</p>
+      </details>
+      <details>
+        <summary>Will Nova change my system settings?</summary>
+        <p>Only safe, undoable fixes in your own account happen automatically. Anything that needs admin rights waits for you and shows the exact command before macOS asks for your password.</p>
+      </details>
+      <details>
+        <summary>Which agents are supported?</summary>
+        <p>Claude Code, Codex, Cursor, Gemini CLI, Antigravity and VS Code. Any tool can report to Nova's local socket.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="brand-head" data-nova-head aria-hidden="true"></span>
+    <p>Nova, made for people who build with AI agents.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="nova2.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
